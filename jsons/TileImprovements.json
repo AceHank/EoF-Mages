@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Remove Lava",
+		"turnsToBuild": 1,
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X"
+	},
+	{
+		"name": "Fortress",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Great Improvement",
+			"Gives a defensive bonus of [50]%",
+			"Adjacent enemy units ending their turn take [15] damage",
+			"Can be built outside your borders",
+			"[-10 Food, -10 Culture, -10 Science, -10 Gold, -10 Faith, -10 Production] <in [Enemy Land] tiles>",
+			"Removes removable features when built",
+			"Costs [2] [Gold] per turn",
+            "Will not be replaced by automated units",
+		]
+	},
+]

@@ -1,0 +1,207 @@
+[
+	{
+		"columnNumber": 3,
+		"era": "Classical era",
+		"techCost": 105,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Thaumaturgy",
+				"cost": 85,
+				"row": 4,
+				"prerequisites": ["Writing"],
+				"quote": "'The thaumaturgic art is neither holy nor profane; it is an art of wisdom, demanding purity of heart and mastery over one’s own nature to employ the higher laws of the universe.' - Franz Hartmann"
+			},
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Classical era",
+		"techCost": 175,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Drama and Poetry",
+				"row": 4,
+				"prerequisites": ["Thaumaturgy"],
+				"quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
+			},
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Medieval era",
+		"techCost": 485,
+		"buildingCost": 160,
+		"wonderCost": 400,
+		"techs": [
+			{
+				"name": "Magical Warfare",
+				"row": 5,
+				"prerequisites": ["Civil Service", "Guilds"],
+                "uniques": ["[+50]% weight to this choice for AI decisions"],
+                "quote": "'Magical warfare is not a clash of swords, but a battle of wills. It is in the precision of thought and the direction of the mind that victory is secured.' - Aleister Crowley"
+			},
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Renaissance era",
+		"techCost": 780,
+		"buildingCost": 200,
+		"wonderCost": 500,
+		"techs": [
+			{
+				"name": "Banking",
+				"row": 6,
+				"prerequisites": ["Chivalry", "Education", "Magical Warfare"],
+                "uniques": ["[+100]% weight to this choice for AI decisions"],
+				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
+			},
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Renaissance era",
+		"techCost": 1150,
+		"buildingCost": 250,
+		"wonderCost": 625,
+		"techs": [
+			{
+				"name": "Arcane Studies",
+				"row": 6,
+				"prerequisites": ["Acoustics","Banking"],
+                "uniques": ["[+50]% weight to this choice for AI decisions"],
+				"quote": "'The arcane arts are no mere folly but the means to discover the secrets of God’s creation, for in the symbols of magic lie the laws of nature yet unseen.' - John Dee"
+			},
+			{
+				"name": "Economics",
+				"row": 7,
+				"prerequisites": ["Banking","Printing Press"],
+                "uniques": ["[+50]% weight to this choice for AI decisions"],
+				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
+			},
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Industrial era",
+		"techCost": 1600,
+		"buildingCost": 300,
+		"wonderCost": 750,
+		"techs": [
+			{
+				"name": "Scientific Theory",
+				"row": 4,
+				"prerequisites": ["Architecture","Economics","Arcane Studies"],
+                "uniques": ["[+100]% weight to this choice for AI decisions"],
+				"quote": "'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
+			},
+			{
+				"name": "Industrialization",
+				"row": 6,
+				"prerequisites": ["Economics", "Arcane Studies"],
+                "uniques": ["[+50]% weight to this choice for AI decisions"],
+				"quote": "'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
+			},
+		]
+	},
+	{
+		"columnNumber": 10,
+		"era": "Industrial era",
+		"techCost": 2350,
+		"buildingCost": 360,
+		"wonderCost": 900, // Note that this column doesn't actually have any wonders. This just continues the wonderCost = 2.5 * buildingCost pattern from the last few columns.
+		"techs": [
+			{
+				"name": "Technomancy",
+				"row": 4,
+				"prerequisites": ["Scientific Theory", "Industrialization"],
+                "uniques": ["[+100]% weight to this choice for AI decisions"],
+				"quote": "'Any sufficiently advanced technology is indistinguishable from magic.' - Arthur C. Clarke"
+			},
+		]
+	},
+	{
+		"columnNumber": 11,
+		"era": "Modern era",
+		"techCost": 3100,
+		"buildingCost": 500,
+		"wonderCost": 1060,
+		"techs": [
+			{
+				"name": "Replaceable Parts",
+				"row": 4,
+				"prerequisites": ["Electricity","Steam Power","Technomancy"],
+                "uniques": ["[+100]% weight to this choice for AI decisions"],
+				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
+			},
+		]
+	},
+	{
+		"columnNumber": 12,
+		"era": "Modern era",
+		"techCost": 4100,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Thaumaturgic Mastery",
+				"row": 4,
+				"prerequisites": ["Replaceable Parts"],
+                "uniques": ["[+150]% weight to this choice for AI decisions"],
+				"quote": "'The art of Thaumaturgy lies in understanding the invisible virtues of things, for in knowing their properties, man may command the forces of nature to heal or transform.' - Paracelsus"
+			},
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Atomic era",
+		"techCost": 5100,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Atomic Theory",
+				"row": 4,
+				"prerequisites": ["Plastics","Electronics","Thaumaturgic Mastery"],
+                "uniques": ["[+100]% weight to this choice for AI decisions"],
+				"quote": "'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
+			},
+		]
+	},
+	{
+		"columnNumber": 16,
+		"era": "Information era",
+		"techCost": 8800,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Apotheosis",
+				"row": 5,
+				"prerequisites": ["Advanced Ballistics","Mobile Tactics"],
+				"quote": "'Man is something that shall be overcome. What have you done to overcome him?' - Friedrich Nietzsche"
+			},
+		]
+	},
+	{
+		"columnNumber": 17,
+		"era": "Future era",
+		"techCost": 9500,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Future Tech",
+				"row": 5,
+				"prerequisites": ["Globalization","Particle Physics","Nuclear Fusion","Nanotechnology","Stealth","Apotheosis"],
+				"uniques": ["Can be continually researched"],
+				"quote": "'I think we agree, the past is over.' - George W. Bush",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			}
+		]
+	}
+]

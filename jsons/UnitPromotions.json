@@ -1,0 +1,1559 @@
+[
+	{
+		"name": "Heal Instantly",
+		"uniques": ["[This Unit] heals [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Siege","Archery","Ranged Gunpowder","Armored","Melee Water","Ranged Water","Submarine", "Melee Mage", "Ranged Mage"],
+		"innerColor": [195,53,43],
+		"outerColor": [253,236,234],
+        "row": 0,
+        "column": 0
+    },
+	
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//						SCHOOL OF ABILITIES							  //
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	
+	//~~~~~~~~~~Elemental School~~~~~~~~~~~~~~~~~//
+	//Pyromancy
+	{
+		"name": "Pyromancy I",
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Scorch]: Apply [Burning] for 2 turns. [Cooldown]: 5 turns.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Scorch]: Apply [Burning] for 2 turns. [Cooldown]: 5 turns.]",
+					"Comment [[Fireball]: Deal 25 extra damage and apply [Burning] for 1 turns. [Cooldown]: 10 turns. Cost: 1 Move.]",
+					
+					//Scorch
+					"[This Unit] gains the [Scorch] status for [1] turn(s) <for [0] movement> <for units without [Scorch Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					//Fireball
+					"[This Unit] gains the [Fireball] status for [1] turn(s) <for [1] movement> <for units without [Fireball Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [255, 69, 0],
+		"outerColor": [0, 0, 0]
+        "column": 60,
+        "row": 1
+	},
+	{
+		"name": "Pyromancy II",
+		"prerequisites": ["Pyromancy I"],
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Fireball]: Deal 25 extra damage and apply [Burning] for 1 turn. [Cooldown]: 10 turns. Cost: 1 Move.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Epidemic of Fire]: Apply [Hellfire] for 3 turns, spread to adjacent units on turn end. [Cooldown]: 15 turns. Cost: 1 Move.]",
+					"Comment [[Magic Missile]: Deal 15 extra damage. Duration: 3 turns. [Cooldown]: 15 turns.]",
+					
+					//Fireball
+					"[This Unit] gains the [Fireball] status for [1] turn(s) <for [1] movement> <for units without [Fireball Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Epidemic of Fire
+					"[This Unit] gains the [Epidemic of Fire] status for [1] turn(s) <for [1] movement> <for units without [Epidemic of Fire Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+					//Magic Missile
+					"[This Unit] gains the [Magic Missile] status for [3] turn(s) <for [0] movement> <for units without [Magic Missile Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+					
+					"Only available <for units with [Aeromancy I]>",
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [255, 69, 0],
+		"outerColor": [0, 0, 0]
+        "column": 60,
+        "row": 2,
+	},
+	{
+		"name": "Pyromancy III",
+		"prerequisites": ["Pyromancy II"],
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Everburning Flame]: Apply [Holy Flame] permanently. [Cooldown]: 12 turns. Cost: 1 Move.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Disintegration]: Deal 75 extra damage. [Cooldown]: 20 turns. Cost: 1 Move; [Mana Charge].]",
+					"Comment [[Lava Surge]: Deal 50 extra damage and turns attacked Land tile into [Lava]. [Cooldown]: 18 turns. Cost: 1 Move.]",
+					
+					//Everburning Flame
+					"[This Unit] gains the [Everburning Flame] status for [1] turn(s) <for [1] movement> <for units without [Everburning Flame Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Disintegration
+					"[This Unit] gains the [Disintegration] status for [1] turn(s) <for [1] movement> <for units without [Disintegration Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <for units with [Mana Charge]> <removing the [Mana Charge] promotion/status> <hidden from users>",
+					//Lava Surge
+					"[This Unit] gains the [Lava Surge] status for [1] turn(s) <for [1] movement> <for units without [Lava Surge Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+					
+					"Only available <for units with [Pyromancy II]> <for units with [Geomancy I]>",
+					"[This Unit] gains the [Any Elemental T3 School] promotion <hidden from users>",
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [255, 69, 0],
+		"outerColor": [0, 0, 0]
+        "column": 60,
+        "row": 3,
+	},
+	
+	//Aeromancy
+	{
+		"name": "Aeromancy I",
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Favourable Wind]: +1 Movement for this and adjacent units. Duration: 2 turns. [Cooldown]: 15 turns. Cost: 1 Move]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Conduit]: Apply [Conductive] for 3 turns. May move after applying. [Cooldown]: 10 turns.]",
+					"Comment [[Thunderclap]: Deal 20 extra damage and apply [Deafened] for 2 turns. [Cooldown]: 10 turns. Cost: 1 move.]",
+					
+					//Favourable Wind
+					"[This Unit] gains the [Favourable Wind] status for [2] turn(s) <for [1] movement> <for units without [Favourable Wind Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",					
+					//Conduit
+					"[This Unit] gains the [Conduit] status for [1] turn(s) <for [0] movement> <for units without [Conduit Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+					//Thunderclap
+					"[This Unit] gains the [Thunderclap] status for [1] turn(s) <for [1] movement> <for units without [Thunderclap Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [147, 112, 219],
+		"outerColor": [0, 0, 0]
+        "column": 61,
+        "row": 1
+	},
+	{
+		"name": "Aeromancy II",
+		"prerequisites": ["Aeromancy I"],
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Thunderclap]: Deal 20 extra damage and apply [Deafened] for 2 turns. [Cooldown]: 10 turns. Cost: 1 Move.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Uncanny Evasion]: Withdraws from Melee combat. Duration: 2 turns. [Cooldown]: 15 turns. Cost: 1 Move.]",
+					"Comment [[Superconductor]: Deal 15 extra damage and apply [Electrified] for 3 turns. [Cooldown]: 12 turns. Cost: 1 Move.]",
+					
+					//Thunderclap
+					"[This Unit] gains the [Thunderclap] status for [1] turn(s) <for [1] movement> <for units without [Thunderclap Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",	
+					//Uncanny Evasion
+					"[This Unit] gains the [Uncanny Evasion] status for [2] turn(s) <for [1] movement> <for units without [Uncanny Evasion Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+					//Superconductor
+					"[This Unit] gains the [Superconductor] status for [1] turn(s) <for [1] movement> <for units without [Superconductor Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",					
+					
+					"Only available <for units with [Hydromancy I]>",
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [147, 112, 219],
+		"outerColor": [0, 0, 0]
+        "column": 61,
+        "row": 2,
+	},
+	{
+		"name": "Aeromancy III",
+		"prerequisites": ["Aeromancy II"],
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Disruptive Storm]: Deal 15 extra damage and apply [Shocking Feedback] for 3 turns. [Cooldown]: 18 turns. Cost: 1 Move.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Heavy Thunderstorm]: Deal 20 extra damage, apply [Wet], [Chilled], and [Electrified] for 3 turns. [Cooldown]: 14 turns. Cost: 1 Move.]",
+					"Comment [[Electrodebilitation]: Apply [Conductive] and [Electrified]. May move after applying. [Cooldown]: 16 turns.]",
+					
+					//Disruptive Storm
+					"[This Unit] gains the [Disruptive Storm] status for [1] turn(s) <for [1] movement> <for units without [Disruptive Storm Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Heavy Thunderstorm
+					"[This Unit] gains the [Heavy Thunderstorm] status for [1] turn(s) <for [1] movement> <for units without [Heavy Thunderstorm Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+					//Electrodebilitation
+					"[This Unit] gains the [Electrodebilitation] status for [1] turn(s) <for [0] movement> <for units without [Electrodebilitation Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+					
+					"Only available <for units with [Aeromancy II]> <for units with [Pyromancy I]>",
+					"[This Unit] gains the [Any Elemental T3 School] promotion <hidden from users>",
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [147, 112, 219],
+		"outerColor": [0, 0, 0]
+        "column": 61,
+        "row": 3,
+	},
+	
+	//Hydromancy
+	{
+		"name": "Hydromancy I",
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Cleanse]: This unit and adjacent units gain [Debuff Immune] for 1 turn upon turn end. [Cooldown]: 8 turns. Cost: 2 Move.]",
+					"Comment [[Ice Blast]: Deal 15 extra damage and apply [Chilled] for 3 turns. [Cooldown]: 8 turns. Cost 1 Move.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Frost Armour]: Passive. Block the next attack. [Cooldown]: 10 turns.]",
+					"Comment [[Water Whip]: Deal 15 extra damage and apply [Disarmed] for 1 turn and [Wet] for 3 turns. [Cooldown]: 8 turns. Cost: 1 Move.]",
+					
+					//Cleanse
+					"[This Unit] gains the [Cleanse] status for [1] turn(s) <for [2] movement> <for units without [Cleanse Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",	
+					//Ice Blast
+					"[This Unit] gains the [Ice Blast] status for [1] turn(s) <for [1] movement> <for units without [Ice Blast Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",	
+					
+					//Frost Armour
+					"[This Unit] gains the [Frost Armour] promotion <hidden from users>",
+					"[This Unit] gains the [Frost Armour Cooldown] status for [10] turn(s) <upon losing at least [0] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+					//Water Whip
+					"[This Unit] gains the [Water Whip] status for [1] turn(s) <for [1] movement> <for units without [Water Whip Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [0, 191, 255],
+		"outerColor": [0, 0, 0]
+        "column": 62,
+        "row": 1
+	},
+	{
+		"name": "Hydromancy II",
+		"prerequisites": ["Hydromancy I"],
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Frost Armour]: Passive. Block the next attack. [Cooldown]: 8 turns.]",
+					"Comment [[Steam Cloud]: Deal 15 extra damage, apply [Wet] and [Blinded] for 2 turns. [Cooldown]: 14 turns. Cost: 1 Move.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Winter Blast]: Deal 25 extra damage, apply [Brittle Skin] for 2 turns and 50% chance to apply [Frozen] for 1 turn. [Cooldown]: 15 turns. Cost: 1 Move.]",
+					"Comment [[Ice Lance]: Deal 20 extra damage, apply [Bleeding] and [Crippled] for 2 turns. [Cooldown]: 10 turns. Cost: 1 Move.]",	
+					
+					//Frost Armour
+					"[This Unit] gains the [Frost Armour] promotion <hidden from users>",
+					"[This Unit] gains the [Frost Armour Cooldown] status for [8] turn(s) <upon losing at least [1] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [Melee Mage] units> <hidden from users>",	
+					//Steam Cloud
+					"[This Unit] gains the [Steam Cloud] status for [1] turn(s) <for [1] movement> <for units without [Steam Cloud Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",		
+					//Winter Blast
+					"[This Unit] gains the [Winter Blast] status for [1] turn(s) <for [1] movement> <for units without [Winter Blast Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+					//Ice Lance
+					"[This Unit] gains the [Ice Lance] status for [1] turn(s) <for [1] movement> <for units without [Ice Lance Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+		
+		
+					"Only available <for units with [Geomancy I]>",
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [0, 191, 255],
+		"outerColor": [0, 0, 0]
+        "column": 62,
+        "row": 2,
+	},
+	{
+		"name": "Hydromancy III",
+		"prerequisites": ["Hydromancy II"],
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Arcane Stitch]: Adjacent units heals 50 HP upon turn end, also gives [Debuff Immune] for 1 turn. [Cooldown]: 18 turns. Cost: 2 Move.]",
+					"Comment [[Glacier Barrage]: Deal 20 extra damage, apply [Brittle Skin] for 2 turns, and 50% chance to apply [Frozen]. Can attack 3 times, but cannot target the same target twice. [Cooldown]: 18 turns.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Chilling Touch]: Passive. Apply [Chilled] and [Frostbitten] for 1 turn.]",
+					"Comment [[Ice Age]: Apply [Permafrost], and turns attacked tile into [Frozen Wasteland]. [Cooldown]: 18 turns. Cost: 1 Move; [Mana Charge].]",
+					
+					//Arcane Stitch
+					"[This Unit] gains the [Arcane Stitch] status for [1] turn(s) <for [2] movement> <for units without [Arcane Stitch Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Glacier Barrage
+					"[This Unit] gains the [Glacier Barrage] status for [1] turn(s) <for [0] movement> <for units without [Glacier Barrage Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					
+					//Chilling Touch
+					"[Target Unit] gains the [Chilled] status for [2] turn(s) <upon damaging a [All] unit> <hidden from users>",
+					"[Target Unit] gains the [Frostbitten] status for [2] turn(s) <upon damaging a [All] unit> <hidden from users>",
+					//Ice Age
+					"[This Unit] gains the [Ice Age] status for [1] turn(s) <for [1] movement> <for units without [Ice Age Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <for units with [Mana Charge]> <removing the [Mana Charge] promotion/status> <hidden from users>",
+					
+					
+					"Only available <for units with [Hydromancy II]> <for units with [Aeromancy I]>",
+					"[This Unit] gains the [Any Elemental T3 School] promotion <hidden from users>",
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [0, 191, 255],
+		"outerColor": [0, 0, 0]
+        "column": 62,
+        "row": 3,
+	},
+	
+	//Geomancy
+	{
+		"name": "Geomancy I",
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Stoneskin]: Gain +25% Strength when defending. Duration: 3 turns. [Cooldown]: 12 turns. Cost: 1 Move.]",
+					"Comment [[Boulder Toss]: Deal 20 extra damage and apply [Crushed], 10 more damage vs Mounted/Armored units. [Cooldown]: 10 turns. Cost: 1 Move.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Basilisk's Gaze]: Apply [Petrified] for 1 turn. [Cooldown]: 18 turns. Cost: 1 Move.]",
+					"Comment [[Geospike]: Deal 20 extra damage and apply [Crippled] and [Calcifying] for 2 turns. [Cooldown]: 12 turns. Cost: 1 Move.]",
+					
+					//Stoneskin
+					"[This Unit] gains the [Stoneskin] status for [3] turn(s) <for [1] movement> <for units without [Stoneskin Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Boulder Toss
+					"[This Unit] gains the [Boulder Toss] status for [1] turn(s) <for [1] movement> <for units without [Boulder Toss Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Basilisk's Gaze
+					"[This Unit] gains the [Basilisk's Gaze] status for [1] turn(s) <for [1] movement> <for units without [Basilisk's Gaze Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+					//Geospike
+					"[This Unit] gains the [Geospike] status for [1] turn(s) <for [1] movement> <for units without [Geospike Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [139, 69, 19],
+		"outerColor": [0, 0, 0]
+        "column": 63,
+        "row": 1
+	},
+	{
+		"name": "Geomancy II",
+		"prerequisites": ["Geomancy I"],
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Form Hill]: Turn this tile into [Hill]. [Cooldown]: 18 turns. Cost: All Move.]",
+					"Comment [[Earthen Grasp]: Apply [Oiled] and [Rooted] for 2 turns. [Cooldown]: 12 turns. Cost: 1 Move.]",
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Corrosive Spray]: Deal 15 extra damage and apply [Corrosion] for 2 turns, Deal 15 more damage vs Armored/Construct. [Cooldown]: 12 turns. Cost: 1 Move.]",
+					"Comment [[Oil Torrent]: Apply [Oiled] for 3 turns. [Cooldown]: 8 turns.]",
+					
+					//Form Hill
+					"[This Unit] gains the [Form Hill] status for [1] turn(s) <for all movement> <for units without [Form Hill Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Earthen Grasp
+					"[This Unit] gains the [Earthen Grasp] status for [1] turn(s) <for [1] movement> <for units without [Earthen Grasp Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Corrosive Spray
+					"[This Unit] gains the [Corrosive Spray] status for [1] turn(s) <for [1] movement> <for units without [Corrosive Spray Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+					//Oil Torrent
+					"[This Unit] gains the [Oil Torrent] status for [1] turn(s) <for [0] movement> <for units without [Oil Torrent Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",
+		
+		
+					"Only available <for units with [Pyromancy I]>",
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [139, 69, 19],
+		"outerColor": [0, 0, 0]
+        "column": 63,
+        "row": 2,
+	},
+	{
+		"name": "Geomancy III",
+		"prerequisites": ["Geomancy II"],
+		"uniques": ["Comment [Melee Mage:]",
+					"Comment [[Create Fortress]: Instantly construct [Fortress]. [Cooldown]: 18 turns. Cost: 2 Move (You need to do this ability twice. Search for the 2nd activation.)]",
+					"Comment [[Tectonic Drill]: Deal 15 extra damage and apply [Mass Panic]. Recast next turn. [Cooldown]: 16 turns. Cost: 1 Move.]",					
+					
+					"Comment [\nRanged Mage:]",
+					"Comment [[Shape Golem]: Create a strongest available Footman unit as Construct. [Cooldown]: 16 turns. Cost: All Move; [Mana Charge]]",
+					"Comment [[Earthquake]: Gain +500% Strength vs Cities for this turn. Or Deal extra 40 damage and destroy improvement vs units. [Cooldown]: 18 turns. Cost: 1 Move.]",
+					
+					//Create Fortress
+					"[This Unit] gains the [Create Fortress] status for [1] turn(s) <for [1] movement> <for units without [Create Fortress Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] gains the [Create Fortress Cooldown] status for [18] turn(s) <upon losing the [Create Fortress] status> <hidden from users>",
+					//Tectonic Drill
+					"[This Unit] gains the [Tectonic Drill] status for [1] turn(s) <for [1] movement> <for units without [Tectonic Drill Cooldown]> <for [non-[NoCast]] units> <for [Melee Mage] units> <hidden from users>",
+					//Shape Golem
+					"[This Unit] gains the [Shape Golem] status for [1] turn(s) <for all movement> <for units without [Shape Golem Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <for units with [Mana Charge]> <removing the [Mana Charge] promotion/status> <hidden from users>",
+					//Earthquake
+					"[This Unit] gains the [Earthquake] status for [1] turn(s) <for [1] movement> <for units without [Earthquake Cooldown]> <for [non-[NoCast]] units> <for [Ranged Mage] units> <hidden from users>",	
+					
+					"Only available <for units with [Geomancy II]> <for units with [Hydromancy I]>",
+					"[This Unit] gains the [Any Elemental T3 School] promotion <hidden from users>",
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+		"innerColor": [139, 69, 19],
+		"outerColor": [0, 0, 0]
+        "column": 63,
+        "row": 3,
+	},
+	
+	//~~~~~~~~~~Metamagic School~~~~~~~~~~~~~~~~~//
+	//Divination
+	{
+		"name": "Divination I",
+		"uniques": ["Comment [Test]",
+					
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+        "column": 71,
+        "row": 1
+	},
+	{
+		"name": "Divination II",
+		"prerequisites": ["Divination I", "Any Elemental T3 School"],
+		"uniques": ["Comment [Test]",
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+        "column": 71,
+        "row": 2,
+	},
+	{
+		"name": "Divination III",
+		"prerequisites": ["Divination II"],
+		"uniques": ["Comment [Test]",
+					
+					
+					
+					],
+		"unitTypes": ["Ranged Mage"],
+        "column": 71,
+        "row": 3,
+	},
+	
+	//Necromancy
+	{
+		"name": "Necromancy I",
+		"uniques": ["Comment [Test]",
+					"Only available <for units without [Theurgy I]> <for units without [Theurgy II]> <for units without [Theurgy III]>",
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+        "column": 72,
+        "row": 1
+	},
+	{
+		"name": "Necromancy II",
+		"prerequisites": ["Necromancy I", "Any Elemental T3 School"],
+		"uniques": ["Comment [Test]",
+					"Only available <for units without [Theurgy I]> <for units without [Theurgy II]> <for units without [Theurgy III]>",
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+        "column": 72,
+        "row": 2,
+	},
+	{
+		"name": "Necromancy III",
+		"prerequisites": ["Necromancy II"],
+		"uniques": ["Comment [Test]",
+					"Only available <for units without [Theurgy I]> <for units without [Theurgy II]> <for units without [Theurgy III]>",
+					
+					
+					],
+		"unitTypes": ["Ranged Mage"],
+        "column": 72,
+        "row": 3,
+	},
+	
+	//Theurgy
+	{
+		"name": "Theurgy I",
+		"uniques": ["Comment [Test]",
+					"Only available <for units without [Necromancy I]> <for units without [Necromancy II]> <for units without [Necromancy III]>",
+					
+					
+					
+					],
+		"unitTypes": ["Melee Mage"],
+        "column": 73,
+        "row": 1
+	},
+	{
+		"name": "Theurgy II",
+		"prerequisites": ["Theurgy I", "Any Elemental T3 School"],
+		"uniques": [
+					"Comment [[Cure Wounds]: Adjacent units heals 25 HP upon turn end. [Cooldown]: 15 turns. Cost: 2 Move.]",
+					"Only available <for units without [Necromancy I]> <for units without [Necromancy II]> <for units without [Necromancy III]>",
+					
+					
+					],
+		"unitTypes": ["Melee Mage"],
+        "column": 73,
+        "row": 2,
+	},
+	{
+		"name": "Theurgy III",
+		"prerequisites": ["Theurgy II"],
+		"uniques": ["Comment [Test]",
+					"Only available <for units without [Necromancy I]> <for units without [Necromancy II]> <for units without [Necromancy III]>",
+					
+					
+					
+					],
+		"unitTypes": ["Melee Mage"],
+        "column": 73,
+        "row": 3,
+	},
+	
+	//Enhancement
+	{
+		"name": "Enhancement I",
+		"uniques": ["Comment [Test]",
+					
+					
+					
+					],
+		"unitTypes": ["Melee Mage"],
+        "column": 74,
+        "row": 1
+	},
+	{
+		"name": "Enhancement II",
+		"prerequisites": ["Enhancement I", "Any Elemental T3 School"],
+		"uniques": ["Comment [Test]",
+					
+					
+					],
+		"unitTypes": ["Melee Mage"],
+        "column": 74,
+        "row": 2,
+	},
+	{
+		"name": "Enhancement III",
+		"prerequisites": ["Enhancement II"],
+		"uniques": ["Comment [Test]",
+					
+					
+					
+					],
+		"unitTypes": ["Melee Mage"],
+        "column": 74,
+        "row": 3,
+	},
+	
+	//Abjuration
+	{
+		"name": "Abjuration I",
+		"uniques": ["Comment [Test]",
+					
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+        "column": 75,
+        "row": 1
+	},
+	{
+		"name": "Abjuration II",
+		"prerequisites": ["Abjuration I", "Any Elemental T3 School"],
+		"uniques": ["Comment [Test]",
+					
+					
+					],
+		"unitTypes": ["Melee Mage","Ranged Mage"],
+        "column": 75,
+        "row": 2,
+	},
+	
+	/*
+	//~~~~~~~~~~Martial School~~~~~~~~~~~~~~~~~//
+	//Battlemaster
+	{
+		"name": "Battlemaster I",
+		"uniques": [
+					"Only available <for [Melee] units>",
+					
+					
+					
+					],
+		"unitTypes": ["Melee Mage", "Sword", "Gunpowder", "Mounted", "Armored"],
+        "column": 80,
+        "row": 1
+	},
+	{
+		"name": "Battlemaster II",
+		"prerequisites": ["Battlemaster I"],
+		"uniques": [
+					"Only available <for [Melee] units>",
+					
+					
+					],
+		"unitTypes": ["Melee Mage", "Sword", "Gunpowder", "Mounted", "Armored"],
+        "column": 80,
+        "row": 2,
+	},
+	{
+		"name": "Battlemaster III",
+		"prerequisites": ["Battlemaster II"],
+		"uniques": [
+					"Only available <for [Melee] units>",
+					
+					
+					
+					],
+		"unitTypes": ["Melee Mage", "Sword", "Gunpowder", "Mounted", "Armored"],
+        "column": 80,
+        "row": 3,
+	},
+	
+	//Roguery
+	{
+		"name": "Roguery I",
+		"uniques": ["Comment [Test]",
+					
+					
+					
+					],
+		"unitTypes": ["Archery", "Ranged Gunpowder", "Sword", "Gunpowder"],
+        "column": 81,
+        "row": 1
+	},
+	{
+		"name": "Roguery II",
+		"prerequisites": ["Roguery I"],
+		"uniques": ["Comment [Test]",
+					
+					
+					],
+		"unitTypes": ["Archery", "Ranged Gunpowder", "Sword", "Gunpowder"],
+        "column": 81,
+        "row": 2,
+	},
+	{
+		"name": "Roguery III",
+		"prerequisites": ["Roguery II"],
+		"uniques": ["Comment [Test]",
+					
+					
+					
+					],
+		"unitTypes": ["Archery", "Ranged Gunpowder", "Sword", "Gunpowder"],
+        "column": 81,
+        "row": 3,
+	},
+	
+	//Huntsmanship
+	{
+		"name": "Huntsmanship I",
+		"uniques": [
+					"Only available <for [Ranged] units>",
+					
+					
+					],
+		"unitTypes": ["Archery", "Ranged Gunpowder",],
+        "column": 82,
+        "row": 1
+	},
+	{
+		"name": "Huntsmanship II",
+		"prerequisites": ["Huntsmanship I"],
+		"uniques": [
+					"Only available <for [Ranged] units>",
+					
+					
+					],
+		"unitTypes": ["Archery", "Ranged Gunpowder"],
+        "column": 82,
+        "row": 2,
+	},
+	{
+		"name": "Huntsmanship III",
+		"prerequisites": ["Huntsmanship II"],
+		"uniques": [
+					"Only available <for [Ranged] units>",
+					
+					
+					
+					],
+		"unitTypes": ["Archery", "Ranged Gunpowder"],
+        "column": 82,
+        "row": 3,
+	},
+	
+	//Siegecraft
+	{
+		"name": "Siegecraft I",
+		"uniques": [
+					"Only available <for [Ranged] units>",
+					
+					
+					],
+		"unitTypes": ["Siege", "Melee Water", "Ranged Water"],
+        "column": 83,
+        "row": 1
+	},
+	{
+		"name": "Siegecraft II",
+		"prerequisites": ["Siegecraft I"],
+		"uniques": [
+					"Only available <for [Ranged] units>",
+					
+					
+					],
+		"unitTypes": ["Siege", "Melee Water", "Ranged Water"],
+        "column": 83,
+        "row": 2,
+	},
+	{
+		"name": "Siegecraft III",
+		"prerequisites": ["Siegecraft II"],
+		"uniques": [
+					"Only available <for [Ranged] units>",
+					
+					
+					
+					],
+		"unitTypes": ["Siege", "Melee Water", "Ranged Water"],
+        "column": 83,
+        "row": 3,
+	},
+	*/
+	
+	
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//					ACTIVE & COOLDOWN STATUSES						  //
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	
+	//Pyromancy
+	{
+		"name": "Scorch",	//Scorch
+		"uniques": ["[Target Unit] gains the [Burning] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[This Unit] loses the [Scorch] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Scorch Cooldown] status for [5] turn(s) <upon gaining the [Scorch] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					
+					"[Target Unit] takes [20] damage <upon damaging a [PyroExtra] unit>",
+					"[Target Unit] loses the [Oiled] status <upon damaging a [PyroExtra] unit>",]
+	},
+	{
+		"name": "Scorch Cooldown",
+		"uniques": ["Comment [Scorch is on Cooldown]"]
+	},
+	{
+		"name": "Fireball",	//Fireball
+		"uniques": ["[Target Unit] gains the [Burning] status for [2] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [25] damage <upon damaging a [All] unit>",
+					"[This Unit] loses the [Fireball] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Fireball Cooldown] status for [10] turn(s) <upon gaining the [Fireball] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					
+					"[Target Unit] takes [20] damage <upon damaging a [PyroExtra] unit>",
+					"[Target Unit] loses the [Oiled] status <upon damaging a [PyroExtra] unit>",]
+	},
+	{
+		"name": "Fireball Cooldown",
+		"uniques": ["Comment [Fireball is on Cooldown]"]
+	},
+	{
+		"name": "Epidemic of Fire",	//Epidemic of Fire
+		"uniques": ["[Target Unit] gains the [Hellfire] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Fire Epidemic] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[This Unit] loses the [Epidemic of Fire] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Epidemic of Fire Cooldown] status for [15] turn(s) <upon gaining the [Epidemic of Fire] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					
+					"[Target Unit] takes [20] damage <upon damaging a [PyroExtra] unit>",
+					"[Target Unit] loses the [Oiled] status <upon damaging a [PyroExtra] unit>",]
+	},
+	{
+		"name": "Epidemic of Fire Cooldown",
+		"uniques": ["Comment [Epidemic of Fire is on Cooldown]"]
+	},
+	{
+		"name": "Magic Missile",	//Magic Missile
+		"uniques": [
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[This Unit] gains the [Magic Missile Cooldown] status for [10] turn(s) <upon gaining the [Magic Missile] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					
+					"[Target Unit] takes [20] damage <upon damaging a [PyroExtra] unit>",
+					"[Target Unit] loses the [Oiled] status <upon damaging a [PyroExtra] unit>",]
+	},
+	{
+		"name": "Magic Missile Cooldown",
+		"uniques": ["Comment [Magic Missile is on Cooldown]"]
+	},
+	{
+		"name": "Everburning Flame",	//Everburning Flame
+		"uniques": ["[Target Unit] gains the [Holy Flame] promotion <upon damaging a [All] unit>",
+					"[This Unit] loses the [Everburning Flame] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Everburning Flame Cooldown] status for [12] turn(s) <upon gaining the [Everburning Flame] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					
+					"[Target Unit] takes [20] damage <upon damaging a [PyroExtra] unit>",
+					"[Target Unit] loses the [Oiled] status <upon damaging a [PyroExtra] unit>",]
+	},
+	{
+		"name": "Everburning Flame Cooldown",
+		"uniques": ["Comment [Everburning Flame is on Cooldown]"]
+	},
+	{
+		"name": "Disintegration",	//Disintegration
+		"uniques": [
+					"[Target Unit] takes [75] damage <upon damaging a [All] unit>",
+					"[This Unit] loses the [Disintegration] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Disintegration Cooldown] status for [20] turn(s) <upon gaining the [Disintegration] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					
+					"[Target Unit] takes [20] damage <upon damaging a [PyroExtra] unit>",
+					"[Target Unit] loses the [Oiled] status <upon damaging a [PyroExtra] unit>",]
+	},
+	{
+		"name": "Disintegration Cooldown",
+		"uniques": ["Comment [Disintegration is on Cooldown]"]
+	},
+	{
+		"name": "Lava Surge",	//Lava Surge
+		"uniques": ["[Target Unit] gains the [Lava Eruption] status for [1] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [50] damage <upon damaging a [All] unit>",
+					"[This Unit] loses the [Lava Surge] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Lava Surge Cooldown] status for [18] turn(s) <upon gaining the [Lava Surge] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					
+					"[Target Unit] takes [20] damage <upon damaging a [PyroExtra] unit>",
+					"[Target Unit] loses the [Oiled] status <upon damaging a [PyroExtra] unit>",]
+	},
+	{
+		"name": "Lava Surge Cooldown",
+		"uniques": ["Comment [Lava Surge is on Cooldown]"]
+	},
+	
+	//Aeromancy 
+	{
+		"name": "Favourable Wind",	//Favourable Wind
+		"uniques": ["[+1] Movement", "Favourable Wind Aura",
+					"[This Unit] gains the [Favourable Wind Cooldown] status for [10] turn(s) <upon gaining the [Favourable Wind] status>",]
+	},
+	{
+		"name": "Favourable Wind Cooldown",
+		"uniques": ["Comment [Favourable Wind is on Cooldown]"]
+	},
+	{
+		"name": "Conduit",	//Conduit
+		"uniques": ["[Target Unit] gains the [Conductive] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[This Unit] gains [1] movement <upon damaging a [All] unit>",
+					"Can move after attacking",
+					"[This Unit] gains the [Conduit Cooldown] status for [10] turn(s) <upon gaining the [Conduit] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",					
+					]
+	},
+	{
+		"name": "Conduit Cooldown",
+		"uniques": ["Comment [Conduit is on Cooldown]"]
+	},
+	{
+		"name": "Thunderclap",	//Thunderclap
+		"uniques": ["[Target Unit] gains the [Deafened] status for [2] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [20] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [AeroExtra] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [WetExtra] unit>",
+					"[This Unit] loses the [Thunderclap] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Thunderclap Cooldown] status for [10] turn(s) <upon gaining the [Thunderclap] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Thunderclap Cooldown",
+		"uniques": ["Comment [Thunderclap is on Cooldown]"]
+	},
+	{
+		"name": "Uncanny Evasion",	//Uncanny Evasion
+		"uniques": ["Withdraws before melee combat", "[+1]% Strength <when defending> <hidden from users>",
+					"[This Unit] gains the [Uncanny Evasion Cooldown] status for [15] turn(s) <upon gaining the [Uncanny Evasion] status>",]
+	},
+	{
+		"name": "Uncanny Evasion Cooldown",
+		"uniques": ["Comment [Favourable Wind is on Cooldown]"]
+	},
+	{
+		"name": "Superconductor",	//Superconductor
+		"uniques": ["[Target Unit] gains the [Electrified Main] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [AeroExtra] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [WetExtra] unit>",
+					"[This Unit] loses the [Superconductor] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Superconductor Cooldown] status for [12] turn(s) <upon gaining the [Superconductor] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Superconductor Cooldown",
+		"uniques": ["Comment [Superconductor is on Cooldown]"]
+	},
+	{
+		"name": "Disruptive Storm",	//Disruptive Storm
+		"uniques": ["[Target Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [AeroExtra] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [WetExtra] unit>",
+					"[This Unit] loses the [Disruptive Storm] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Disruptive Storm Cooldown] status for [18] turn(s) <upon gaining the [Disruptive Storm] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Disruptive Storm Cooldown",
+		"uniques": ["Comment [Disruptive Storm is on Cooldown]"]
+	},
+	{
+		"name": "Heavy Thunderstorm",	//Heavy Thunderstorm
+		"uniques": ["[Target Unit] gains the [Wet] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Chilled] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Electrified Main] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [20] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [AeroExtra] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [WetExtra] unit>",
+					"[This Unit] loses the [Heavy Thunderstorm] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Heavy Thunderstorm Cooldown] status for [14] turn(s) <upon gaining the [Heavy Thunderstorm] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Heavy Thunderstorm Cooldown",
+		"uniques": ["Comment [Heavy Thunderstorm is on Cooldown]"]
+	},
+	{
+		"name": "Electrodebilitation",	//Electrodebilitation
+		"uniques": ["[Target Unit] gains the [Conductive] promotion <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Electrified Main] promotion <upon damaging a [All] unit>",
+					"[This Unit] loses the [Electrodebilitation] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Electrodebilitation Cooldown] status for [16] turn(s) <upon gaining the [Electrodebilitation] status>",
+					"[This Unit] gains [1] movement <upon damaging a [All] unit>",
+					"Can move after attacking",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					]
+	},
+	{
+		"name": "Electrodebilitation Cooldown",
+		"uniques": ["Comment [Electrodebilitation is on Cooldown]"]
+	},
+	
+	//Hydromancy
+	{
+		"name": "Cleanse",	//Cleanse
+		"uniques": ["Cleanse Aura", 
+					"[This Unit] gains the [Cleanse Cooldown] status for [8] turn(s) <upon gaining the [Cleanse] status>",
+					
+					//Self
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end>",
+					]
+	},
+	{
+		"name": "Cleanse Cooldown",
+		"uniques": ["Comment [Cleanse is on Cooldown]"]
+	},
+	{
+		"name": "Ice Blast",	//Ice Blast
+		"uniques": ["[Target Unit] gains the [Chilled] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [WetExtra] unit>",
+					"[This Unit] loses the [Ice Blast] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Ice Blast Cooldown] status for [8] turn(s) <upon gaining the [Ice Blast] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Ice Blast Cooldown",
+		"uniques": ["Comment [Ice Blast is on Cooldown]"]
+	},
+	{
+		"name": "Frost Armour",	//Frost Armour
+		"uniques": ["Comment [Blocks enemy attack every 8 turns.]",
+					"[+1]% Strength <when defending> <for units without [Frost Armour Cooldown]> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [1] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [2] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [3] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [4] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [5] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [6] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [7] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [8] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [9] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [10] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [11] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [12] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [13] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [14] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [15] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [16] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [17] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [18] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [19] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [20] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [21] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [22] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [23] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [24] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [25] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [26] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [27] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [28] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [29] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [30] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [31] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [32] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [33] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [34] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [35] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [36] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [37] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [38] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [39] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [40] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [41] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [42] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [43] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [44] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [45] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [46] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [47] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [48] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [49] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [50] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [51] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [52] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [53] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [54] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [55] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [56] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [57] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [58] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [59] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [60] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [61] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [62] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [63] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [64] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [65] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [66] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [67] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [68] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [69] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [70] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [71] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [72] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [73] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [74] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [75] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [76] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [77] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [78] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [79] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [80] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [81] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [82] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [83] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [84] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [85] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [86] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [87] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [88] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [89] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [90] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [91] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [92] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [93] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [94] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [95] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [96] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [97] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [98] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [99] HP in a single attack> <for units without [Frost Armour Cooldown]> <for [non-[NoCast]] units> <hidden from users>",
+					]
+	},
+	{
+		"name": "Frost Armour Cooldown",
+		"uniques": ["Comment [Frost Armour is on Cooldown]"]
+	},
+	{
+		"name": "Water Whip",	//Water Whip
+		"uniques": ["[Target Unit] gains the [Disarmed] status for [2] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Wet] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[This Unit] loses the [Water Whip] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Water Whip Cooldown] status for [10] turn(s) <upon gaining the [Water Whip] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Water Whip Cooldown",
+		"uniques": ["Comment [Water Whip is on Cooldown]"]
+	},
+	{
+		"name": "Steam Cloud",	//Steam Cloud
+		"uniques": ["[Target Unit] gains the [Wet] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Blinded] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[This Unit] loses the [Steam Cloud] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Steam Cloud Cooldown] status for [14] turn(s) <upon gaining the [Steam Cloud] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Steam Cloud Cooldown",
+		"uniques": ["Comment [Steam Cloud is on Cooldown]"]
+	},
+	{
+		"name": "Winter Blast",	//Winter Blast
+		"uniques": ["[Target Unit] gains the [Brittle Skin] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [All] unit> <with [50]% chance>",
+					"[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [WetExtra] unit>",
+					"[Target Unit] takes [25] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [WetExtra] unit>",
+					"[This Unit] loses the [Winter Blast] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Winter Blast Cooldown] status for [10] turn(s) <upon gaining the [Winter Blast] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Winter Blast Cooldown",
+		"uniques": ["Comment [Winter Blast is on Cooldown]"]
+	},
+	{
+		"name": "Ice Lance",	//Ice Lance
+		"uniques": ["[Target Unit] gains the [Bleeding] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Crippled] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [20] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [WetExtra] unit>",
+					"[This Unit] loses the [Ice Lance] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Ice Lance Cooldown] status for [10] turn(s) <upon gaining the [Ice Lance] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Ice Lance Cooldown",
+		"uniques": ["Comment [Ice Lance is on Cooldown]"]
+	},
+	{
+		"name": "Arcane Stitch",	//Arcane Stitch
+		"uniques": ["Arcane Stitch Aura", 
+					"[This Unit] gains the [Arcane Stitch Cooldown] status for [18] turn(s) <upon gaining the [Arcane Stitch] status>",
+					
+					]
+	},
+	{
+		"name": "Arcane Stitch Cooldown",
+		"uniques": ["Comment [Arcane Stitch is on Cooldown]"]
+	},
+	{
+		"name": "Glacier Barrage",	//Glacier Barrage
+		"uniques": ["[Target Unit] gains the [Brittle Skin] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [All] unit> <with [50]% chance>",
+					"[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [WetExtra] unit>",
+					"[Target Unit] gains the [GlacierTarget] status for [1] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [20] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [WetExtra] unit>",
+					"[This Unit] gains [2] movement <upon damaging a [All] unit>", "[2] additional attacks per turn",
+					"[This Unit] gains the [Glacier Barrage Cooldown] status for [18] turn(s) <upon gaining the [Glacier Barrage] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Glacier Barrage Cooldown",
+		"uniques": ["Comment [Glacier Barrage is on Cooldown]",]
+	},
+	{
+		"name": "GlacierTarget",
+		"uniques": ["Comment [This unit is already targeted with Glacier Barrage]"
+					"GlacierTargetI <hidden from users>",
+					]
+	},
+	{
+		"name": "Ice Age",	//Ice Age
+		"uniques": ["[Target Unit] gains the [Ice Age Creation] status for [1] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Permafrost] promotion <upon damaging a [All] unit>",
+					"[This Unit] loses the [Ice Age] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Ice Age Cooldown] status for [18] turn(s) <upon gaining the [Ice Age] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Ice Age Cooldown",
+		"uniques": ["Comment [Ice Age is on Cooldown]"]
+	},
+	
+	//Geomancy
+	{
+		"name": "Stoneskin",	//Stoneskin
+		"uniques": ["[+25]% Strength <when defending>",
+					"[This Unit] gains the [Stoneskin Cooldown] status for [12] turn(s) <upon gaining the [Stoneskin] status>",]
+	},
+	{
+		"name": "Stoneskin Cooldown",
+		"uniques": ["Comment [Stoneskin is on Cooldown]"]
+	},
+	{
+		"name": "Boulder Toss",	//Boulder Toss
+		"uniques": ["[Target Unit] gains the [Crushed] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [20] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [Mounted] unit>",
+					"[Target Unit] takes [10] damage <upon damaging a [Armored] unit>",
+					"[This Unit] loses the [Boulder Toss] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Boulder Toss Cooldown] status for [10] turn(s) <upon gaining the [Boulder Toss] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Boulder Toss Cooldown",
+		"uniques": ["Comment [Boulder Toss is on Cooldown]"]
+	},
+	{
+		"name": "Basilisk's Gaze",	//Basilisk's Gaze
+		"uniques": ["[Target Unit] gains the [Petrified] status for [2] turn(s) <upon damaging a [All] unit>",
+					"[This Unit] loses the [Basilisk's Gaze] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Basilisk's Gaze Cooldown] status for [18] turn(s) <upon gaining the [Basilisk's Gaze] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Basilisk's Gaze Cooldown",
+		"uniques": ["Comment [Basilisk's Gaze is on Cooldown]"]
+	},
+	{
+		"name": "Geospike",	//Geospike
+		"uniques": ["[Target Unit] gains the [Crippled] status for [2] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Calcifying] status for [2] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [20] damage <upon damaging a [All] unit>",
+					"[This Unit] loses the [Geospike] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Geospike Cooldown] status for [12] turn(s) <upon gaining the [Geospike] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Geospike Cooldown",
+		"uniques": ["Comment [Geospike is on Cooldown]"]
+	},
+	{
+		"name": "Form Hill",	//Form Hill
+		"uniques": ["Turn this tile into a [Hill] tile <in [Land] tiles> <for [1] movement> <removing the [Form Hill] promotion/status>",
+					"[This Unit] gains the [Form Hill Cooldown] status for [18] turn(s) <upon gaining the [Form Hill] status>",]
+	},
+	{
+		"name": "Form Hill Cooldown",
+		"uniques": ["Comment [Form Hill is on Cooldown]"]
+	},
+	{
+		"name": "Earthen Grasp",	//Earthen Grasp
+		"uniques": ["[Target Unit] gains the [Oiled] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] gains the [Rooted] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[This Unit] loses the [Earthen Grasp] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Earthen Grasp Cooldown] status for [12] turn(s) <upon gaining the [Earthen Grasp] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Earthen Grasp Cooldown",
+		"uniques": ["Comment [Earthen Grasp is on Cooldown]"]
+	},
+	{
+		"name": "Corrosive Spray",	//Corrosive Spray
+		"uniques": ["[Target Unit] gains the [Corrosion] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [{non-[Construct]} {Armored}] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [{non-[Armored]} {Construct}] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [{Construct} {Armored}] unit>",
+					"[This Unit] loses the [Corrosive Spray] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Corrosive Spray Cooldown] status for [12] turn(s) <upon gaining the [Corrosive Spray] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Corrosive Spray Cooldown",
+		"uniques": ["Comment [Corrosive Spray is on Cooldown]"]
+	},
+	{
+		"name": "Oil Torrent",	//Oil Torrent
+		"uniques": ["[Target Unit] gains the [Oiled] status for [4] turn(s) <upon damaging a [All] unit>",
+					"[This Unit] loses the [Oil Torrent] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Oil Torrent Cooldown] status for [8] turn(s) <upon gaining the [Oil Torrent] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Oil Torrent Cooldown",
+		"uniques": ["Comment [Oil Torrent is on Cooldown]"]
+	},
+	{
+		"name": "Create Fortress",	//Create Fortress
+		"uniques": ["Can instantly construct a [Fortress] improvement <for [1] movement> <removing the [Create Fortress] promotion/status>",]
+	},
+	{
+		"name": "Create Fortress Cooldown",
+		"uniques": ["Comment [Create Fortress is on Cooldown]"]
+	},
+	{
+		"name": "Tectonic Drill",	//Tectonic Drill
+		"uniques": ["[Target Unit] gains the [Mass Panic] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[This Unit] loses the [Tectonic Drill] status <upon damaging a [All] unit>",
+					"[This Unit] gains the [Tectonic Drill Cooldown] status for [16] turn(s) <upon gaining the [Tectonic Drill] status>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Tectonic Drill II",	//Tectonic Drill II
+		"uniques": ["[Target Unit] gains the [Mass Panic] status for [3] turn(s) <upon damaging a [All] unit>",
+					"[Target Unit] takes [15] damage <upon damaging a [All] unit>",
+					"[This Unit] loses the [Tectonic Drill II] status <upon damaging a [All] unit>",
+					"[+1]% Strength <when attacking> <hidden from users>",]
+	},
+	{
+		"name": "Tectonic Drill Cooldown",
+		"uniques": ["Comment [Tectonic Drill is on Cooldown]",
+					"[This Unit] gains the [Tectonic Drill II] status for [2] turn(s) <upon losing the [Tectonic Drill] status>",]
+	},
+	{
+		"name": "Shape Golem",	//Shape Golem
+		"uniques": ["Comment [Create a strongest available Footman unit as a Construct.]",
+					"[This Unit] gains the [Shape Golem Cooldown] status for [16] turn(s) <upon gaining the [Shape Golem] status> <hidden from users>",
+					
+					//Back end
+					"Free [Construct Warrior] appears <before discovering [Iron Working]> <upon gaining the [Shape Golem] status> <hidden from users>",
+					"Free [Construct Swordsman] appears <after discovering [Iron Working]> <before discovering [Steel]> <upon gaining the [Shape Golem] status> <hidden from users>",
+					"Free [Construct Longswordsman] appears <after discovering [Steel]> <before discovering [Gunpowder]> <upon gaining the [Shape Golem] status> <hidden from users>",
+					"Free [Construct Musketman] appears <after discovering [Gunpowder]> <before discovering [Rifling]> <upon gaining the [Shape Golem] status> <hidden from users>",
+					"Free [Construct Rifleman] appears <after discovering [Rifling]> <before discovering [Replaceable Parts]> <upon gaining the [Shape Golem] status> <hidden from users>",
+					"Free [Construct Great War Infantry] appears <after discovering [Replaceable Parts]> <before discovering [Plastics]> <upon gaining the [Shape Golem] status> <hidden from users>",
+					"Free [Construct Infantry] appears <after discovering [Plastics]> <before discovering [Mobile Tactics]> <upon gaining the [Shape Golem] status> <hidden from users>",
+					"Free [Construct Mechanized Infantry] appears <after discovering [Mobile Tactics]> <upon gaining the [Shape Golem] status> <hidden from users>",
+					
+					]
+	},
+	{
+		"name": "Shape Golem Cooldown",
+		"uniques": ["Comment [Shape Golem is on Cooldown]"]
+	},
+	{
+		"name": "Earthquake",	//Earthquake
+		"uniques": ["[+500]% Strength <when attacking> <vs cities>",
+					"[+1]% Strength <when attacking> <hidden from users>",
+					"[Target Unit] takes [40] damage <upon damaging a [All] unit>",
+					"Destroys tile improvements when attacking <hidden from users>",
+					"[This Unit] gains the [Earthquake Cooldown] status for [18] turn(s) <upon gaining the [Earthquake] status>",]
+	},
+	{
+		"name": "Earthquake Cooldown",
+		"uniques": ["Comment [Earthquake is on Cooldown]"]
+	},
+	
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//							DEBUFFS									  //
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	
+	{
+		"name": "Brittle Skin",
+		"uniques": ["Comment [This Unit takes 20 damage upon losing at least 20 HP in a single attack, then remove this status.]",
+					"[-1]% Strength <hidden from users>",
+					"[This Unit] takes [20] damage <upon losing at least [20] HP in a single attack> <hidden from users>",
+					"[This Unit] takes [10] damage <upon losing at least [20] HP in a single attack> <for [WetExtra] units> <hidden from users>",
+					"[This Unit] loses the [Brittle Skin] status <upon losing at least [20] HP in a single attack> <hidden from users>"
+					]
+	},
+	{
+		"name": "Calcifying",
+		"uniques": ["Comment [Takes 5 extra damage]",
+					"[-1]% Strength <hidden from users>",
+					"[This Unit] takes [5] damage <upon losing at least [1] HP in a single attack> <hidden from users>"
+					]
+	},
+	{
+		"name": "Conductive",
+		"uniques": ["Comment [Takes 10 extra damage from Aeromancy spells and statuses]", "AeroExtra <hidden from users>",
+					"[-1]% Strength <hidden from users>",
+					]
+	},
+	{
+		"name": "Corrosion",
+		"uniques": ["[-25]% Strength <when defending>",
+					]
+	},
+	{
+		"name": "Crippled",
+		"uniques": ["[-99] Movement"
+					"[-1]% Strength <hidden from users>",
+					]
+	},
+	{
+		"name": "Deafened",
+		"uniques": ["Comment [Can't cast abilities, can't Flank, and takes extra Flank damage]"
+					"NoCast <hidden from users>",
+					"[-1]% Strength <hidden from users>",
+					]
+	},
+	{
+		"name": "Electrified Main",
+		"uniques": ["Comment [Takes 10 damage, -1 Movement, and takes 5 damage upon turn end. Doubled if [Armored]/[Construct], applied to adjacent units whos taking damage]", 
+					"Electrified Aura <hidden from users>",
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon gaining the [Electrified] status> <hidden from users>",
+					"[This Unit] loses the [Electrified Main] status <upon losing the [Electrified] status> <hidden from users>",
+					]
+	},
+	{
+		"name": "Electrified",
+		"uniques": ["Comment [Takes 10 damage, -1 Movement, and takes 5 damage upon turn end. Doubled if [Armored]/[Construct], applied to adjacent units whos taking damage]", 
+					"[This Unit] takes [10] damage <upon gaining the [Electrified] status> <hidden from users>",
+					"[This Unit] takes [10] damage <upon gaining the [Electrified] status> <for [{non-[Construct]} {Armored}] units> <hidden from users>",
+					"[This Unit] takes [10] damage <upon gaining the [Electrified] status> <for [{non-[Armored]} {Construct}] units> <hidden from users>",
+					"[This Unit] takes [10] damage <upon gaining the [Electrified] status> <for [{Armored} {Construct}] units> <hidden from users>",
+					"[This Unit] takes [10] damage <upon gaining the [Electrified] status> <for [AeroExtra] units> <hidden from users>",
+					"[This Unit] takes [10] damage <upon gaining the [Electrified] status> <for [WetExtra] units> <hidden from users>",
+					"[-1] Movement <hidden from users>",
+					"[-1] Movement <for [{non-[Construct]} {Armored}] units> <hidden from users>",
+					"[-1] Movement <for [{non-[Armored]} {Construct}] units> <hidden from users>",
+					"[-1] Movement <for [{Armored} {Construct}] units> <hidden from users>",
+					"[This Unit] takes [5] damage <upon turn end> <hidden from users>",
+					"[This Unit] takes [5] damage <upon turn end> <for [{non-[Construct]} {Armored}] units> <hidden from users>",
+					"[This Unit] takes [5] damage <upon turn end> <for [{non-[Armored]} {Construct}] units> <hidden from users>",
+					"[This Unit] takes [5] damage <upon turn end> <for [{Armored} {Construct}] units> <hidden from users>",
+					"[This Unit] takes [10] damage <upon turn end> <for [AeroExtra] units> <hidden from users>",
+					"[This Unit] takes [10] damage <upon turn end> <for [WetExtra] units> <hidden from users>",
+					"[-1]% Strength <hidden from users>",
+					]
+	},
+	{
+		"name": "Fire Epidemic",
+		"uniques": ["Fire Epidemic Aura <hidden from users>",
+					]
+	},
+	{
+		"name": "Hellfire",
+		"uniques": ["[This Unit] takes [15] damage <upon turn end>", 
+					"[-1]% Strength <hidden from users>",
+					
+					"[This Unit] takes [20] damage <upon gaining the [Oiled] status> <hidden from users>",
+					"[This Unit] loses the [Oiled] status <upon gaining the [Oiled] status> <hidden from users>"
+					]
+	},
+	{
+		"name": "Holy Flame",
+		"uniques": ["[This Unit] takes [20] damage <upon turn end>",
+					"[-1]% Strength <hidden from users>",
+					
+					"[This Unit] takes [20] damage <upon gaining the [Oiled] status> <hidden from users>",
+					"[This Unit] loses the [Oiled] status <upon gaining the [Oiled] status> <hidden from users>"
+					]
+	},
+	{
+		"name": "Ice Age Creation",
+		"uniques": ["Turn this tile into a [Frozen Wasteland] tile <upon gaining the [Ice Age Creation] status>",
+					]
+	},
+	{
+		"name": "Lava Eruption",
+		"uniques": ["Turn this tile into a [Lava] tile <in tiles without [Water]> <upon gaining the [Lava Eruption] status>",
+					]
+	},
+	{
+		"name": "Mass Panic",
+		"uniques": ["[-15]% Strength bonus for [Military] units within [2] tiles",
+					"[-1]% Strength <hidden from users>",
+					]
+	},
+	{
+		"name": "Oiled",
+		"uniques": ["Comment [-1 Movement, takes 20 extra damage from Pyromancy spells and statuses, then remove this status.]"
+					"[-1]% Strength <hidden from users>", "PyroExtra <hidden from users>",
+					"[-1] Movement <hidden from users>",
+					
+					]
+	},
+	{
+		"name": "Permafrost",
+		"uniques": ["Cannot attack","Cannot move","No defensive terrain bonus","Can only heal by pillaging","No Sight","NoCast <hidden from users>",
+					"[-1]% Strength <hidden from users>",
+					]
+	},
+	{
+		"name": "Petrified",
+		"uniques": ["Cannot attack", "Cannot move", "No defensive terrain bonus", "Can only heal by pillaging", "No Sight"
+					"Comment [Refresh duration to 2 turns when [Calcifying] is applied.]",
+					"Comment [Reduces damage taken by 50% (rounded down), up to 30 damage]",
+					"[-1]% Strength <hidden from users>",
+					"NoCast <hidden from users>",
+					"[This Unit] gains the [Petrified] status for [3] turn(s) <upon gaining the [Calcifying] status> <hidden from users>",
+					
+					"[This Unit] heals [1] HP <upon losing at least [2] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [4] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [6] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [8] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [10] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [12] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [14] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [16] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [18] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [20] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [22] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [24] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [26] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [28] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [30] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [32] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [34] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [36] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [38] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [40] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [42] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [44] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [46] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [48] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [50] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [52] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [54] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [56] HP in a single attack> <hidden from users>",
+					"[This Unit] heals [1] HP <upon losing at least [58] HP in a single attack> <hidden from users>","[This Unit] heals [1] HP <upon losing at least [60] HP in a single attack> <hidden from users>",
+					]
+	},
+	{
+		"name": "Rooted",
+		"uniques": ["Comment [Can't move; Can't declare Melee attack]"
+					"[-1]% Strength <hidden from users>",
+					"Cannot move <hidden from users>",
+					"Cannot attack <for [Melee] units> <hidden from users>",
+					]
+	},
+	{
+		"name": "Shocking Feedback",
+		"uniques": ["Comment [Takes 15 damage upon attacking, Can't Move, also applied to adjacent attacking units]", 
+					"[-1]% Strength <hidden from users>",
+					"Shocking Feedback Aura <hidden from users>",
+					"Cannot move <hidden from users>",
+					"[This Unit] takes [15] damage <upon damaging a [All] unit> <hidden from users>",
+					"[This Unit] takes [10] damage <upon damaging a [All] unit> <for [AeroExtra] units> <hidden from users>",
+					"[This Unit] takes [10] damage <upon damaging a [All] unit> <for [WetExtra] units> <hidden from users>",
+					]
+	},
+	{
+		"name": "Wet",
+		"uniques": ["Comment [Takes 10 extra damage from Ice and Lightning spells and statuses. Doubles any [Frozen] chance.]", "WetExtra <hidden from users>",
+					"[-1]% Strength <hidden from users>",
+					"[This Unit] takes [10] damage <upon turn end> <for units with [Frostbitten]> <hidden from users>",
+					"[This Unit] gains the [Frozen] status for [2] turn(s) <upon turn end> <for units with [Chilled]> <with [15]% chance> <hidden from users>",
+					]
+	},
+	
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//						OVERWRITES STUFFS							  //
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	{
+		"name": "Bleeding",
+		"uniques": ["Comment [This Unit takes 10 damage upon turn end. Removed upon turn end when adjacent to [Healer]s and [Medic]s promotions.]",
+					"[This Unit] takes [10] damage <upon turn end> <hidden from users>",
+					"[This Unit] loses the [Bleeding] status <upon turn end> <when adjacent to a [Healer I] unit> <hidden from users>",
+					"[This Unit] loses the [Bleeding] status <upon turn end> <when adjacent to a [Healer II] unit> <hidden from users>",
+					"[This Unit] loses the [Bleeding] status <upon turn end> <when adjacent to a [Medic I] unit> <hidden from users>",
+					"[This Unit] loses the [Bleeding] status <upon turn end> <when adjacent to a [Medic II] unit> <hidden from users>",
+					"[-1]% Strength <hidden from users>",
+					]
+	},
+	{
+		"name": "Burning",
+		"uniques": ["[This Unit] takes [10] damage <upon turn end>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [Water] tile>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [River] tile>",
+					"[-1]% Strength <hidden from users>",
+					
+					"[This Unit] takes [20] damage <upon gaining the [Oiled] status> <hidden from users>",
+					"[This Unit] loses the [Oiled] status <upon gaining the [Oiled] status> <hidden from users>"
+					]
+	},
+	{
+		"name": "Frozen",
+		"uniques": ["Cannot attack", "Cannot move", "[-30]% Strength", "No defensive terrain bonus", "Can only heal by pillaging",
+					"[This Unit] loses the [Frozen] status <upon losing at least [1] HP in a single attack>", "No Sight","NoCast <hidden from users>",
+					]
+	},
+	{
+		"name": "Stunned",
+		"uniques": ["[This Unit] loses [999] movement <upon losing the [Turn Start Trigger] status>", "[-1]% Strength", "No defensive terrain bonus", "Can only heal by pillaging", "No Sight","NoCast <hidden from users>",]
+	},
+	{
+		"name": "Withered",
+		"uniques": ["No defensive terrain bonus", "Can only heal by pillaging", "Unable to pillage tiles", 
+					 "[-1]% Strength",
+					 
+					//Promotions counter, we need this below because `Can on heal by pillaging` doesn't work for Triggers
+					"[This Unit] takes [50] damage <upon gaining the [Infernal Regeneration] status> <hidden from users>",
+					"[This Unit] takes [25] damage <upon losing the [Second Wind Active] status> <hidden from users>",
+					"[This Unit] takes [5] damage <upon damaging a [All] unit> <for units with [Bloodbath]> <hidden from users>",
+					
+					"[-5] HP when healing <for units with [Regenerative Bio-Steel]> <hidden from users>",
+					"[-5] HP when healing <for units with [Regeneration]> <hidden from users>",  
+					"[-15] HP when healing <for units with [True Demon Form]> <hidden from users>",  
+					
+					"[-5] HP when healing <when adjacent to a [Healer 1] unit> <hidden from users>", 
+					"[-5] HP when healing <when adjacent to a [Healer 2] unit> <hidden from users>", 
+					"[-5] HP when healing <when adjacent to a [Medic] unit> <hidden from users>", 
+					"[-5] HP when healing <when adjacent to a [Medic II] unit> <hidden from users>", 
+					"[-5] HP when healing <when adjacent to a [Medic II] unit> <in [Foreign Land] tiles> <hidden from users>"]
+	},
+	{
+		"name": "Debuff Immune",
+		"uniques": ["[+1]% Strength <hidden from users>",
+					
+					//Remove new debuffs
+					"[This Unit] loses the [Stunned] status <upon gaining the [Stunned] status>",
+					"[This Unit] loses the [Baned] status <upon gaining the [Baned] status>",
+					"[This Unit] loses the [Burning] status <upon gaining the [Burning] status>",
+					"[This Unit] loses the [Binded] status <upon gaining the [Binded] status>",
+					"[This Unit] loses the [Blinded] status <upon gaining the [Blinded] status>",
+					"[This Unit] loses the [Chained] status <upon gaining the [Chained] status>",
+					"[This Unit] loses the [Chilled] status <upon gaining the [Chilled] status>",
+					"[This Unit] loses the [Crushed] status <upon gaining the [Crushed] status>",
+					"[This Unit] loses the [Frostbitten] status <upon gaining the [Frostbitten] status>",
+					"[This Unit] loses the [Frozen] status <upon gaining the [Frozen] status>",
+					"[This Unit] loses the [Marked] status <upon gaining the [Marked] status>",
+					"[This Unit] loses the [Shackled] status <upon gaining the [Shackled] status>",
+					"[This Unit] loses the [Withered] status <upon gaining the [Withered] status>",
+					
+					"[This Unit] loses the [Conductive] status <upon gaining the [Conductive] status>",
+					"[This Unit] loses the [Crippled] status <upon gaining the [Crippled] status>",
+					"[This Unit] loses the [Deafened] status <upon gaining the [Deafened] status>",	
+					"[This Unit] loses the [Electrified] status <upon gaining the [Electrified] status>",	
+					"[This Unit] loses the [Fire Epidemic] status <upon gaining the [Fire Epidemic] status>",	
+					"[This Unit] loses the [Hellfire] status <upon gaining the [Hellfire] status>",	
+					"[This Unit] loses the [Wet] status <upon gaining the [Wet] status>",		
+					
+					//Remove existing debuffs
+					"[This Unit] loses the [Stunned] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Baned] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Burning] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Binded] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Blinded] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Chained] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Chilled] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Crushed] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Frostbitten] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Frozen] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Marked] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Shackled] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Withered] status <upon gaining the [Debuff Immune] status>",
+					
+					"[This Unit] loses the [Conductive] status <upon gaining the [Debuff Immune] status>",	
+					"[This Unit] loses the [Crippled] status <upon gaining the [Debuff Immune] status>",		
+					"[This Unit] loses the [Deafened] status <upon gaining the [Debuff Immune] status>",
+					"[This Unit] loses the [Electrified] status <upon gaining the [Debuff Immune] status>",	
+					"[This Unit] loses the [Fire Epidemic] status <upon gaining the [Debuff Immune] status>",		
+					"[This Unit] loses the [Hellfire] status <upon gaining the [Debuff Immune] status>",	
+					"[This Unit] loses the [Wet] status <upon gaining the [Debuff Immune] status>",			
+					
+		]
+	},
+	
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//						BACK END STUFFS								  //
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	
+	{
+		"name": "Mana Charge",
+		"uniques": ["Comment [This unit is charging an ultimate spell]"]
+	},
+	{
+		"name": "Any T1 School",
+		"uniques": ["Comment [This is a requirement for certain school of abilities]"]
+	},
+	{
+		"name": "Any T2 School",
+		"uniques": ["Comment [This is a requirement for certain school of abilities]"]
+	},
+	{
+		"name": "Any T3 School",
+		"uniques": ["Comment [This is a requirement for certain school of abilities]"]
+	},
+	{
+		"name": "Any Elemental T1 School",
+		"uniques": ["Comment [This is a requirement for certain school of abilities]"]
+	},
+	{
+		"name": "Any Elemental T2 School",
+		"uniques": ["Comment [This is a requirement for certain school of abilities]"]
+	},
+	{
+		"name": "Any Elemental T3 School",
+		"uniques": ["Comment [This is a requirement for certain school of abilities]"]
+	},
+	
+	
+	{
+		"name": "Cooldown",
+		"uniques": ["Comment [Cooldown is the time required before a spell can be cast again]"]
+	},
+	{
+		"name": "Cost",
+		"uniques": ["Comment [Cost is the resource required to cast a spell]"]
+	},
+]

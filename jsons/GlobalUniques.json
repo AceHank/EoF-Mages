@@ -1,0 +1,11 @@
+{
+    "name": "Global uniques",
+    "uniques": [
+		
+		//Stuff
+		"[+50]% to Flank Attack bonuses <vs [Deafened] units>",
+		"[-100]% to Flank Attack bonuses <for [Deafened] units>",
+		
+		
+    ]
+}

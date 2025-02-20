@@ -1,0 +1,842 @@
+[
+	//Melee Mage
+	{
+        "name": "Melee Mage",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Mana Charge
+					"[This Unit] gains the [Mana Charge] status for [2] turn(s) <for all movement> <for units without [Mana Charge]> <for units with [Any Elemental T3 School]>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>",
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",	
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		]
+    },
+	
+	//Ranged Mage
+	{
+        "name": "Ranged Mage",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Mana Charge
+					"[This Unit] gains the [Mana Charge] status for [2] turn(s) <for all movement> <for units without [Mana Charge]> <for units with [Any Elemental T3 School]>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+		]
+    },
+	
+	//Overwrites Stuffs
+	{
+        "name": "Civilian",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Sword",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>",
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",	
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+		],
+    },
+    {
+        "name": "Gunpowder",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Archery",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Ranged Gunpowder",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Mounted",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Armored",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Siege",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Civilian Water",
+        "movementType": "Water",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					//Overwrites
+					
+		],
+    },
+    {
+        "name": "Melee Water",
+        "movementType": "Water",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Ranged Water",
+        "movementType": "Water",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Submarine",
+        "movementType": "Water",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					"Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units", 
+		
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+    {
+        "name": "Aircraft Carrier",
+        "movementType": "Water",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+		],
+    },
+	
+	/* AIR UNITS
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": []
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": []
+    },
+    {
+        "name": "Atomic Bomber",
+        "movementType": "Air",
+        "uniques": []
+    },
+    {
+        "name": "Missile",
+        "movementType": "Air",
+        "uniques": []
+    },
+	AIR UNITS */
+	
+    {
+        "name": "Helicopter",
+        "movementType": "Land",
+		"uniques": [//Favourable Wind
+					"[+1] Movement <when adjacent to a [Favourable Wind Aura] unit>",
+					//Hellfire
+					"[This Unit] gains the [Hellfire] status for [4] turn(s) <upon turn end> <when adjacent to a [Fire Epidemic Aura] unit> <for units without [Hellfire]>",
+					//Electrified
+					"[This Unit] gains the [Electrified] status for [4] turn(s) <upon losing at least [1] HP in a single attack> <when adjacent to a [Electrified Aura] unit> <for units without [Electrified]>",
+					//Shocking Feedback
+					"[This Unit] gains the [Shocking Feedback] status for [4] turn(s) <upon damaging a [All] unit> <when adjacent to a [Shocking Feedback Aura] unit> <for units without [Shocking Feedback]>",
+					//Cleanse
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
+					//Arcane Stitch
+					"[This Unit] heals [50] HP <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Arcane Stitch Aura] unit>",
+					
+					//Overwrites
+					"Can pass through impassable tiles", 
+		
+					//Drow
+					"[This Unit] gains the [Revenge Target] promotion <upon defeating a [Avenged] unit>",
+					//Celestials
+					"[This Unit] gains the [Superior Defense] status for [1] turn(s) <upon turn end> <in tiles adjacent to [City center] tiles> <in cities with a [Curative Spire]> <for [Celestial Beings] Civilizations>",
+					"[This Unit] takes [40] damage <upon defeating a [Volatile] unit> <for [Melee] units>", 
+					"[This Unit] takes [20] damage <upon defeating a [Volatile] unit> <for [Ranged] units>", 		
+					//Healer
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 1] unit>",
+					"[This Unit] heals [5] HP <upon ending a turn in a [All] tile> <when adjacent to a [Healer 2] unit>",
+					//Phrygian Kingdom
+					"[This Unit] gains the [Binded] status for [3] turn(s) <upon damaging a [Gordian Knot] unit>",
+					//Troglodyte
+					"[This Unit] takes [10] damage <upon damaging a [Retribution] unit> <for [Melee] units>", 
+					"[This Unit] takes [5] damage <upon damaging a [Retribution] unit> <for [Ranged] units>", 
+					//Wizard
+					"[Target Unit] gains the [Mana Shield Cooldown] status for [4] turn(s) <upon damaging a [{non-[Mana Shield CD]} {Mana Shield}] unit> <for [Ranged] units>",
+					
+					//Vigilo
+					"[This Unit] loses the [Baned] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Binded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Blinded] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Crushed] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Burning] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
+					
+					//Mixed
+					"Cannot attack <vs [Sanctuary] units>",
+					//Turn Start
+					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					
+		],
+    },
+]

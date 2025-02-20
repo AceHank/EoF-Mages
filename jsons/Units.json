@@ -1,1 +1,198 @@
-
+[
+	//Test purpose
+		{
+			"name": "Meo",
+			"unitType": "Sword",
+			"replaces": "Warrior",
+			"uniqueTo": "Celestial Beings",
+			"movement": 5,
+			"strength": 8,
+			"cost": 1,
+			"obsoleteTech": "Gunpowder",
+			"promotions": ["Sturdy",],
+			"uniques": ["Ignores terrain cost", "[This Unit] gains [5] XP <upon turn end>",
+						"[+5] Sight", "Can move immediately once bought",  "Cannot attack <vs cities>",
+			],
+			"attackSound": "nonmetalhit"
+		},
+		{
+			"name": "Meo 2",
+			"unitType": "Armored",
+			"replaces": "Warrior",
+			"uniqueTo": "Drow Village",
+			"movement": 5,
+			"strength": 8,
+			"cost": 1,
+			"obsoleteTech": "Gunpowder",
+			"promotions": ["Sturdy"],
+			"uniques": ["Ignores terrain cost","Can build [Land] improvements on tiles",
+						"[+5] Sight", "Can move immediately once bought",
+			],
+			"attackSound": "nonmetalhit"
+		},
+	
+	//Melee Mage
+	{
+		"name": "Priest",
+		"unitType": "Ranged Mage",
+		"movement": 2,
+		"cost": 1,
+		"strength": 10,
+		"rangedStrength": 10,
+		"range": 2,
+		"requiredTech": "Agriculture",
+		"obsoleteTech": "Education",
+		"upgradesTo": "Cleric",
+	//	"requiredResource": "Magician",
+		"uniques": ["Comment [Adjacent units heal for 5 HP at turn end]",
+					"[This Unit] gains [45] XP <upon turn end>", "Can move immediately once bought",
+					],
+		"promotions": ["Healer I","Pyromancy I", "Blinding Smite"],
+		"attackSound": "nonmetalhit",
+		"civilopediaText": [
+			{"text": "This unit supports others with its healing ability."} // perlu di reestablish
+		]
+	},
+	
+	{
+		"name": "Cleric",
+		"unitType": "Melee Mage",
+		"movement": 2,
+		"strength": 22
+		"cost": 1,
+		"requiredTech": "Agriculture",
+	//	"requiredResource": "Magician",
+		"uniques": ["Comment [Abilities list:\n]",
+					"[This Unit] gains [45] XP <upon turn end>", "Can move immediately once bought", "Cannot attack <vs [Meo]>",	
+		],
+		"promotions": ["Pyromancy I", "Hydromancy III"],
+		"civilopediaText": [
+			{"text": "Support unit with heal aura. They prefer death over helping the enemies."}
+		]
+	},
+	
+	//Shape Golems
+	{
+		"name": "Construct Warrior",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Swordsman",
+		"uniques": ["May upgrade to [Spearman] through ruins-like effects",
+					"Construct",
+					"Cannot be purchased", "Will not be displayed in Civilopedia", "Unbuildable",
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "This is your basic, club-swinging fighter."}
+		]
+	},
+	{
+		"name": "Construct Swordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 14,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Longswordsman",
+		"uniques": [
+					"Construct",
+					"Cannot be purchased", "Will not be displayed in Civilopedia", "Unbuildable",
+		],
+		"obsoleteTech": "Steel",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Construct Longswordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 21,
+		"cost": 120,
+		"requiredTech": "Steel",
+		"upgradesTo": "Musketman",
+		"uniques": [
+					"Construct",
+					"Cannot be purchased", "Will not be displayed in Civilopedia", "Unbuildable",
+		],
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Construct Musketman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 24,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"uniques": [
+					"Construct",
+					"Cannot be purchased", "Will not be displayed in Civilopedia", "Unbuildable",
+		],
+		"obsoleteTech": "Rifling",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Construct Rifleman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"uniques": [
+					"Construct",
+					"Cannot be purchased", "Will not be displayed in Civilopedia", "Unbuildable",
+		],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Construct Great War Infantry",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 50,
+		"cost": 320,
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "Infantry",
+		"uniques": [
+					"Construct",
+					"Cannot be purchased", "Will not be displayed in Civilopedia", "Unbuildable",
+		],
+		"obsoleteTech": "Plastics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Construct Infantry",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 70,
+		"cost": 375,
+		"requiredTech": "Plastics",
+		"upgradesTo": "Mechanized Infantry",
+		"uniques": [
+					"Construct",
+					"Cannot be purchased", "Will not be displayed in Civilopedia", "Unbuildable",
+		],
+		"obsoleteTech": "Mobile Tactics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Construct Mechanized Infantry",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 90,
+		"cost": 375,
+		"requiredTech": "Mobile Tactics",
+		"uniques": ["Never appears as a Barbarian unit",
+					"Construct",
+					"Cannot be purchased", "Will not be displayed in Civilopedia", "Unbuildable",],
+		"attackSound": "tankshot"
+	},
+	
+]
