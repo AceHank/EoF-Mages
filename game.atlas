@@ -1,0 +1,321 @@
+
+game.png
+size: 2048, 256
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+Aeromancy
+  rotate: false
+  xy: 1943, 197
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Priest
+  rotate: false
+  xy: 931, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Priest-1
+  rotate: false
+  xy: 1034, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Priest-2
+  rotate: false
+  xy: 1137, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Arcanomancer
+  rotate: false
+  xy: 4, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Arcanomancer-1
+  rotate: false
+  xy: 4, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Arcanomancer-2
+  rotate: false
+  xy: 107, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Archwizard
+  rotate: false
+  xy: 107, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Archwizard-1
+  rotate: false
+  xy: 210, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Archwizard-2
+  rotate: false
+  xy: 210, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bard
+  rotate: false
+  xy: 313, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bard-1
+  rotate: false
+  xy: 313, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bard-2
+  rotate: false
+  xy: 416, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Cleric
+  rotate: false
+  xy: 416, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Cleric-1
+  rotate: false
+  xy: 519, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Cleric-2
+  rotate: false
+  xy: 519, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Elementalist
+  rotate: false
+  xy: 622, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Elementalist-1
+  rotate: false
+  xy: 622, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Elementalist-2
+  rotate: false
+  xy: 725, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Grand Magus
+  rotate: false
+  xy: 725, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Grand Magus-1
+  rotate: false
+  xy: 828, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Grand Magus-2
+  rotate: false
+  xy: 828, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Priest
+  rotate: false
+  xy: 931, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Priest-1
+  rotate: false
+  xy: 1034, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Priest-2
+  rotate: false
+  xy: 1137, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Sorcerer
+  rotate: false
+  xy: 1240, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Sorcerer-1
+  rotate: false
+  xy: 1240, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Sorcerer-2
+  rotate: false
+  xy: 1343, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Technomancer
+  rotate: false
+  xy: 1343, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Technomancer-1
+  rotate: false
+  xy: 1446, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Technomancer-2
+  rotate: false
+  xy: 1446, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Templar
+  rotate: false
+  xy: 1549, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Templar-1
+  rotate: false
+  xy: 1549, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Templar-2
+  rotate: false
+  xy: 1652, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Warden
+  rotate: false
+  xy: 4, 4
+  size: 77, 65
+  orig: 77, 65
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Warden-1
+  rotate: false
+  xy: 1858, 182
+  size: 77, 65
+  orig: 77, 65
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Warden-2
+  rotate: false
+  xy: 89, 4
+  size: 77, 65
+  orig: 77, 65
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Wizard
+  rotate: false
+  xy: 1652, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Wizard-1
+  rotate: false
+  xy: 1755, 166
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Wizard-2
+  rotate: false
+  xy: 1755, 77
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Frozen Wasteland
+  rotate: false
+  xy: 1858, 118
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Aeromancy
+  rotate: false
+  xy: 174, 19
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Geomancy
+  rotate: false
+  xy: 232, 19
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Hydromancy
+  rotate: false
+  xy: 290, 19
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Pyromancy
+  rotate: false
+  xy: 348, 19
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
