@@ -49,9 +49,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",	
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		]
     },
@@ -106,9 +104,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 		]
     },
 	
@@ -147,8 +143,6 @@
 					"[This Unit] loses the [Chilled] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
 					
 		],
     },
@@ -198,9 +192,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",	
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 		],
     },
     {
@@ -249,9 +241,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -301,9 +291,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -353,9 +341,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -405,9 +391,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -457,9 +441,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -509,9 +491,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -561,9 +541,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -581,8 +559,6 @@
 					//Cleanse
 					"[This Unit] gains the [Debuff Immune] status for [1] turn(s) <upon turn end> <when adjacent to a [Cleanse Aura] unit>",
 					
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
 					//Overwrites
 					
 		],
@@ -627,9 +603,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -673,9 +647,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -721,9 +693,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },
@@ -757,8 +727,6 @@
 					"[This Unit] loses the [Withered] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
 		],
     },
 	
@@ -833,9 +801,7 @@
 					"[This Unit] loses the [Frostbitten] status <upon ending a turn in a [All] tile> <when adjacent to a [Potionist] unit>",
 					
 					//Mixed
-					"Cannot attack <vs [Sanctuary] units>",
-					//Turn Start
-					"[This Unit] gains the [Turn Start Trigger] status for [1] turn(s) <upon turn end>",
+					"Cannot attack <vs [IsSanctuary] units>",
 					
 		],
     },

@@ -1439,7 +1439,7 @@
 	},
 	{
 		"name": "Stunned",
-		"uniques": ["[This Unit] loses [999] movement <upon losing the [Turn Start Trigger] status>", "[-1]% Strength", "No defensive terrain bonus", "Can only heal by pillaging", "No Sight","NoCast <hidden from users>",]
+		"uniques": ["[This Unit] loses [999] movement <upon turn start>", "[-1]% Strength", "No defensive terrain bonus", "Can only heal by pillaging", "No Sight","NoCast <hidden from users>",]
 	},
 	{
 		"name": "Withered",

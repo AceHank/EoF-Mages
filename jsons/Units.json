@@ -11,7 +11,15 @@
 			"obsoleteTech": "Gunpowder",
 			"promotions": ["Sturdy",],
 			"uniques": ["Ignores terrain cost", "[This Unit] gains [5] XP <upon turn end>",
-						"[+5] Sight", "Can move immediately once bought",  "Cannot attack <vs cities>",
+						"[+5] Sight", "Can move immediately once bought",
+						
+						"[This Unit] gains the [Burning] status for [3] turn(s) <hidden from users>",
+						"[This Unit] gains the [Shocked] status for [3] turn(s) <hidden from users>",
+						"[This Unit] gains the [Chameleon Cloak] status for [3] turn(s) <hidden from users>",
+						"[This Unit] gains the [Regeneration] status for [3] turn(s) <hidden from users>",
+						"[This Unit] gains the [Disarmed] status for [3] turn(s) <hidden from users>",
+						"[This Unit] gains the [Sanctuary] status for [3] turn(s) <hidden from users>",
+						"[This Unit] gains the [Shock I] status for [3] turn(s) <hidden from users>",
 			],
 			"attackSound": "nonmetalhit"
 		},
